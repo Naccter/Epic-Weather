@@ -31,6 +31,7 @@ body {
     position: relative;
     text-align: center;
     cursor: pointer;
+    
 }
 
 .thin-line {
@@ -150,4 +151,13 @@ body {
 
 .Refresh:hover {
     background-color: rgb(133, 189, 223);
+}
+
+.LocationIcon img{
+    width: 50px;
+    height: 50px;
+    right: 195px;
+    bottom: 0px;
+    position: absolute;
+    
 }
