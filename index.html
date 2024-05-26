@@ -4,23 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic Weather</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Style.CSS">
     <script src="Script/script.js" defer></script>
 </head>
 <body>
     <div class="header">
         <div class="current-day">Monday</div>
-        <div class="location">Los Angeles
-            <div class="thin-line"></div>
+        <div id="dropdown">
+            <div class="location-container">
+                <div class="location">Los Angeles</div>
+                <div class="thin-line"></div>
+                <div class="dropdown-content">
+                    <a id="Seoul">Seoul</a>
+                    <a id="NewYork">New York</a>
+                    <a id="London">London</a>
+                    <a id="Tokyo">Tokyo</a>
+                    <a id="Stockholm">Stockholm</a>
+                    <a id="Berlin">Berlin</a>
+                    <a id="Madrid">Madrid</a>
+                    <a id="Rio">Rio</a>
+                    <a id="LosAngeles">Los Angeles</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="current-time">12:00 PM</div>
+    <button id="Refresh">Refresh</button>
     <div class="weather">
         <div class="weather-icon">
             <img src="pics/sol.png" alt="Weather Icon">
         </div>
         <div class="temperature">0</div>
     </div>
+    
     <div class="rain-chance">Chance of Rain: 10%</div>
     <div class="forecast">
         <div class="forecast-day">

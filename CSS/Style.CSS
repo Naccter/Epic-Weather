@@ -25,20 +25,19 @@ body {
     margin-bottom: 10px;
 }
 
-.location {
+.location-container {
     font-size: 2em;
     font-weight: bold;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .thin-line {
     width: 100%;
     height: 2px;
     background-color: #ddd;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+    margin-top: 5px;
 }
 
 .current-time {
@@ -107,4 +106,48 @@ body {
 .forecast-day .forecast-rain {
     font-size: 1em;
     margin-top: 5px;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b2ebf2;
+    min-width: 222px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.location-container:hover .dropdown-content {
+    display: block;
+}
+
+.Refresh {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: lightskyblue;
+    border-width: 2px;
+    border-color: black;
+}
+
+.Refresh:hover {
+    background-color: rgb(133, 189, 223);
 }
